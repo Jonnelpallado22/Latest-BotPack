@@ -25,7 +25,7 @@ let fontlink = 'https://drive.google.com/u/0/uc?id=1ZwFqYB-x6S9MjPfYm3t3SP1joohG
 module.exports.run = async function({ api, event, Users, Threads }) {
   const leftParticipantFbId = event.logMessageData.leftParticipantFbId;
   const name = global.data.userName.get(leftParticipantFbId) || await Users.getNameUser(leftParticipantFbId);
-  const type = (event.author == leftParticipantFbId) ? "left by itself" : "been kicked by the group administrator";
+  const type = (event.author == leftParticipantFbId) ? "leave from this group" : "been kicked by the admin";
   const Yan = (event.author == leftParticipantFbId) ? "left by itself" : "has been kicked by the administrator";
 
   let fontPath = path.join(__dirname, "cache", "font.ttf");
