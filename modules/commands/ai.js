@@ -19,7 +19,7 @@ module.exports.run = async function ({ api, event, args }) {
   try {
     // Available Models: "v3", "v3-32k", "turbo", "turbo-16k", "gemini"
     if (!prompt) {
-      api.sendMessage('Please specify a message!', event.threadID, event.messageID);
+      api.sendMessage('Active! how may assist you today?', event.threadID, event.messageID);
       api.setMessageReaction('❓', event.messageID, () => {}, true);
     } else {
       api.setMessageReaction('⏱️', event.messageID, () => {}, true);
