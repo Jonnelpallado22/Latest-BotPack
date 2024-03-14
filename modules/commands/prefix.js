@@ -28,7 +28,7 @@ module.exports.handleEvent = async ({ event, api, Threads }) => {
       if (data.PREFIX == null) {
         return out(`Prefix is Off`)
       }
-      else return out(`My Prefix: { ${global.config.PREFIX} }\n\nif you don't know the commands please type【 ${global.config.PREFIX}help 】 for the Begginer's Guide.`)
+      else return out(`My Prefix: { $ }\n\nif you don't know the commands please type【 $help 】 for the Begginer's Guide.`)
     }
 
   });
