@@ -1,4 +1,3 @@
-
 module.exports.config = {
   name: "prefix",
   version: "1.0.0",
@@ -26,7 +25,7 @@ module.exports.handleEvent = async ({ event, api, Threads }) => {
     if (body === i.toUpperCase() | body === i | str === body) {
 		const prefix = threadSetting.PREFIX || global.config.PREFIX;
       if (data.PREFIX == null) {
-        return out(`My Prefix: { $ }\n\nif you don't know the commands please type【 $help 】 for the Begginer's Guide.`)
+        return out(`My Prefix: { $ }\n\nIf you don't know the commands\nPlease type【 $help 】 for the Begginer's Guide.`)
       }
       else return out(` `)
     }
