@@ -37,7 +37,7 @@ module.exports.handleEvent = async function ({ event, api, client, Users }) {
     let name = await Users.getNameUser(senderID);
     if (getMsg.attachment[0] == undefined)
       return api.sendMessage(
-        `${name} unsend the message \n\nContent: ${getMsg.msgBody}`,
+        `────${name}────\nunsend this message:\n${getMsg.msgBody}`,
         threadID,
       );
     else {
