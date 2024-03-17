@@ -3,7 +3,7 @@
   "language": "en",
   "DeveloperMode": true,
   "autoCreateDB": true,
-  "allowInbox": true,
+  "allowInbox": false,
   "autoClean": false,
   "adminOnly": false,
   "encryptSt": true,
@@ -37,7 +37,7 @@
   "DEL_FUNCTION": false,
   "ADD_FUNCTION": true,
   "FCAOption": {
-    "forceLogin": false,
+    "forceLogin": true,
     "listenEvents": true,
     "autoMarkDelivery": false,
     "autoMarkRead": false,
