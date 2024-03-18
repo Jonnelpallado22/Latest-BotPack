@@ -71,7 +71,7 @@ let ZiaRein = [" "];
       tag: name,
       id: event.senderID
     })
-    let msg = {body: `Hello ${name} Good ${session}.${ZiaRein1}`, mentions}
+    let msg = {body: `Hello! Good ${session}.${ZiaRein1}`, mentions}
     api.sendMessage(msg, event.threadID, (e, info) => {
       setTimeout(() => {
         api.sendMessage({sticker: sticker}, event.threadID);
